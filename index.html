@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurhabibatul Umah | Portofolio Mahasiswa Teknik Informatika UTM</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Portofolio resmi Nurhabibatul Umah, Mahasiswa Semester 5 Teknik Informatika Universitas Trunojoyo Madura (UTM). Terbuka untuk kesempatan Magang / Internship Web Developer dan Data Science.">
+  <meta name="keywords" content="Portofolio Magang, Teknik Informatika, Universitas Trunojoyo Madura, UTM, Web Developer Intern, Sistem Manajemen Apotek, Information Retrieval, Data Science, BNSP, Dicoding">
+  <meta name="author" content="Nurhabibatul Umah">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Nurhabibatul Umah | Portofolio Magang Teknik Informatika UTM">
+  <meta property="og:description" content="Showcase 5+ proyek rekayasa perangkat lunak dan sains data, serta sertifikasi BNSP & Dicoding siap magang.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpeg">
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Lights -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- ===================================================================
+       HEADER / NAVBAR
+       =================================================================== -->
+  <header class="navbar" id="topNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" id="brandLogo">
+        <i class="fa-solid fa-code" style="color: var(--accent-primary);"></i>
+        <span>Nurhabibatul Umah</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active" id="navHero">Beranda</a></li>
+          <li><a href="#about" id="navAbout">Tentang</a></li>
+          <li><a href="#skills" id="navSkills">Keahlian</a></li>
+          <li><a href="#projects" id="navProjects">Proyek</a></li>
+          <li><a href="#certifications" id="navCerts">Sertifikasi</a></li>
+          <li><a href="#education" id="navEdu">Pendidikan</a></li>
+          <li><a href="#contact" id="navContact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Ganti Tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Quick Print/Save PDF Button -->
+        <button class="btn btn-secondary btn-sm btn-export-pdf" id="navPrintPdfBtn" title="Cetak atau Simpan sebagai PDF">
+          <i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i>
+          <span>Unduh PDF</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+
+          <h1 class="hero-title">
+            Halo, Saya <span class="gradient-text">Nurhabibatul Umah</span>
+          </h1>
+
+          <div class="hero-campus">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Teknik Informatika - Universitas Trunodjoyo Madura</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="heroViewProjectsBtn">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Lihat Portofolio Proyek</span>
+            </a>
+
+            <button class="btn btn-secondary btn-export-pdf" id="heroDownloadPdfBtn">
+              <i class="fa-solid fa-file-arrow-down" style="color: var(--accent-secondary);"></i>
+              <span>Cetak / Simpan Portofolio (PDF)</span>
+            </button>
+
+            <button class="btn btn-outline btn-open-wa" id="heroWaBtn">
+              <i class="fa-brands fa-whatsapp" style="color: var(--accent-success);"></i>
+              <span>Hubungi via WhatsApp</span>
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>6+</h3>
+              <p>Proyek Rekayasa</p>
+            </div>
+            <div class="stat-item">
+              <h3>2+</h3>
+              <p>Sertifikat Resmi</p>
+            </div>
+            <div class="stat-item">
+              <h3>BNSP</h3>
+              <p>Standar SKKNI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <!-- FOTO PROFIL: Ganti file assets/images/profile.jpg dengan foto Anda kapan saja -->
+            <div class="profile-img-container">
+              <img src="assets/images/habiba-porto.jpeg" alt="Foto Profil Nurhabibatul Umah" class="profile-img" id="heroProfileImg" onerror="handleImageError(this, 'profile')">
+              <span class="photo-hint-badge" title="Ganti di assets/images/habiba-porto.jpeg"><i class="fa-solid fa-camera"></i> profile.jpg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ABOUT ME SECTION
+         =================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> Tentang Saya</span>
+          <h2 class="section-title">Dedikasi Belajar & <span class="gradient-text">Kolaborasi Tim yang Solid</span></h2>
+          <p class="section-subtitle">Bagaimana saya mentransformasikan tugas-tugas perkuliahan menjadi produk perangkat lunak yang fungsional dan teruji.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-col">
+            <h3>Profil</h3>
+            <p>
+              Sebagai mahasiswa semester 5 Teknik Informatika di <strong>Universitas Trunodjoyo Madura</strong>, saya telah menyelesaikan berbagai proyek aplikasi berskala riil. Sebagian besar proyek tersebut merupakan <strong>tugas kelompok perkuliahan</strong>, di mana saya dipercaya memegang peran krusial seperti <em>Backend Engineer</em>, maupun pengembang algoritma inti.
+            </p>
+            <p>
+              Saya sangat memahami bahwa di dunia kerja industri dan magang, kemampuan <strong>kerja sama tim (teamwork)</strong>, komunikasi yang transparan, dan disiplin alur kerja Git merupakan kunci keberhasilan proyek. Saya tidak hanya sekadar menyelesaikan tugas untuk nilai akademik, namun memastikan arsitektur kode bersih, terdokumentasi, dan menjawab permasalahan pengguna.
+            </p>
+          </div>
+
+            <!-- Card 2 -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-card-icon cyan">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                  <h4>Informasi Akademik</h4>
+                </div>
+              </div>
+              <ul class="info-card-list">
+                <li><i class="fa-solid fa-calendar-check"></i> <span>2024 - Sekarang | Universitas Trunodjoyo Madura, Teknik Informatika</span></li>
+                <li><i class="fa-solid fa-calendar-check"></i> <span>2021 - 2024 | SMK Negeri 3 Tuban, Rekayasa Perangkat Lunak</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SKILLS & TECH STACK MATRIX
+         =================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Keahlian Teknis</span>
+          <h2 class="section-title">Teknologi & <span class="gradient-text">Alat yang Dikuasai</span></h2>
+          <p class="section-subtitle">Kombinasi bahasa pemrograman, basis data, dan pustaka analisis data yang diaplikasikan pada proyek-proyek riil.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Web Development -->
+          <div class="skill-category-card">
+            <span class="category-icon" style="color: var(--accent-primary);"><i class="fa-solid fa-globe"></i></span>
+            <h3>Web Development</h3>
+            <p>Pengembangan antarmuka responsif dan logika server-side yang aman.</p>
+            <div class="skills-tags">
+              <span class="tech-tag"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+              <span class="tech-tag">Laravel</span>
+            </div>
+          </div>
+
+          <!-- Database Systems -->
+          <div class="skill-category-card">
+            <span class="category-icon" style="color: var(--accent-secondary);"><i class="fa-solid fa-database"></i></span>
+            <h3>Basis Data & Penyimpanan</h3>
+            <p>Perancangan ERD relasional, normalisasi tabel, dan optimasi query.</p>
+            <div class="skills-tags">
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">SQL Query</span>
+              <span class="tech-tag">Relational ERD</span>
+              <span class="tech-tag">Normalisasi 3NF</span>
+              <span class="tech-tag">phpMyAdmin</span>
+              <span class="tech-tag">Laragon / XAMPP</span>
+            </div>
+          </div>
+
+          <!-- Data Science & AI -->
+          <div class="skill-category-card">
+            <span class="category-icon" style="color: var(--accent-purple);"><i class="fa-solid fa-chart-line"></i></span>
+            <h3>Data Science & AI</h3>
+            <p>Preprocessing data, Information Retrieval, NLP, dan evaluasi model Machine Learning.</p>
+            <div class="skills-tags">
+              <span class="tech-tag"><i class="fa-brands fa-python"></i> Python 3</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">TF-IDF & Cosine</span>
+              <span class="tech-tag">NLP Sastrawi</span>
+              <span class="tech-tag">Matplotlib & Seaborn</span>
+            </div>
+          </div>
+
+          <!-- Tools & Workflow -->
+          <div class="skill-category-card">
+            <span class="category-icon" style="color: var(--accent-warning);"><i class="fa-solid fa-toolbox"></i></span>
+            <h3>Tools & Workflow</h3>
+            <p>Alat produktivitas untuk pengembangan perangkat lunak dan kolaborasi tim.</p>
+            <div class="skills-tags">
+              <span class="tech-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="tech-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="tech-tag">VS Code</span>
+              <span class="tech-tag">Jupyter Notebook</span>
+              <span class="tech-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PROJECTS SHOWCASE SECTION
+         =================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portofolio Karya</span>
+          <h2 class="section-title">Proyek Unggulan & <span class="gradient-text">Peran Kontribusi Saya</span></h2>
+          <p class="section-subtitle">
+            Kompilasi proyek riil perkuliahan. Klik <strong>"Detail Proyek & Peran"</strong> untuk melihat latar belakang masalah, peran spesifik saya dalam tim, arsitektur sistem, dan implementasi teknisnya.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">Semua Proyek (6)</button>
+          <button class="filter-btn" data-filter="web">Web Development (3)</button>
+          <button class="filter-btn" data-filter="data-ai">Data Science & AI (3)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Sistem Manajemen Apotek -->
+          <article class="project-card" data-category="web" id="cardApotek">
+            <div class="project-image-box">
+              <img src="assets/images/apotek.png" alt="Preview Sistem Manajemen Apotek" onerror="handleImageError(this, 'apotek')">
+              <span class="project-type-badge">Web Application</span>
+              <span class="photo-hint-badge"><i class="fa-solid fa-image"></i> apotek.png</span>
+            </div>
+            <div class="project-content">
+              <div class="project-role-badge">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Peran: Lead Database & Backend Developer</span>
+              </div>
+              <h3 class="project-title">Sistem Manajemen Apotek (Pharmacy Management System)</h3>
+              <p class="project-desc">
+                Sistem informasi kasir, manajemen stok obat, monitoring masa kedaluwarsa otomatis, resep dokter, dan laporan transaksi apotek berbasis web.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> Point of Sale (POS) & Notifikasi Stok Kritis</li>
+                <li><i class="fa-solid fa-check"></i> Arsitektur Basis Data Relasional Apotek Terstruktur</li>
+                <li><i class="fa-solid fa-check"></i> Pengelolaan Multi-Role: Admin dan Kasir/Apoteker</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">PHP Native</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap 5</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-project="apotek">
+                  <i class="fa-solid fa-circle-info"></i> Detail Proyek & Peran
+                </button>
+                <a href="https://github.com/NURHABIBATULUMAH/Sistem-Manajemen-Apotek" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Information Retrieval & Dense Retrieval -->
+          <article class="project-card" data-category="data-ai" id="cardRetrieval">
+            <div class="project-image-box">
+              <img src="assets/images/information.png" alt="Preview DocuSearch: arXiv Academic Lens" onerror="handleImageError(this, 'retrieval')">
+              <span class="project-type-badge" style="color: var(--accent-purple);">Dense Retrieval & AI</span>
+              <span class="photo-hint-badge"><i class="fa-solid fa-image"></i> information.png</span>
+            </div>
+            <div class="project-content">
+              <div class="project-role-badge">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Peran: AI & Fullstack Engineer (Sole Developer)</span>
+              </div>
+              <h3 class="project-title">DocuSearch: arXiv Academic Lens - Dense Retrieval</h3>
+              <p class="project-desc">
+                Sistem pencarian semantik jurnal ilmiah arXiv dengan Dense Retrieval berbasis Sentence Transformers, indexing spasial FAISS, backend Python Flask, dan antarmuka web PHP.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> Dense Retrieval & Semantic Matching (all-MiniLM-L6-v2)</li>
+                <li><i class="fa-solid fa-check"></i> Indexing Spasial FAISS & Relevansi Cosine Similarity</li>
+                <li><i class="fa-solid fa-check"></i> Arsitektur Hybrid: Backend Flask API & Frontend PHP</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Flask API</span>
+                <span class="tech-tag">Sentence-Transformers</span>
+                <span class="tech-tag">FAISS</span>
+                <span class="tech-tag">PHP</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-project="retrieval">
+                  <i class="fa-solid fa-circle-info"></i> Detail Proyek & Peran
+                </button>
+                <a href="https://github.com/NURHABIBATULUMAH/InformationRetrieval-DenseRetrieval" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Sistem Pemesanan Kamar Hotel -->
+          <article class="project-card" data-category="web" id="cardHotel">
+            <div class="project-image-box">
+              <img src="assets/images/hotel.png" alt="Preview Sistem Pemesanan Kamar Hotel" onerror="handleImageError(this, 'hotel')">
+              <span class="project-type-badge">Web Application</span>
+              <span class="photo-hint-badge"><i class="fa-solid fa-image"></i> hotel.png</span>
+            </div>
+            <div class="project-content">
+              <div class="project-role-badge">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Peran: Backend & Database Developer</span>
+              </div>
+              <h3 class="project-title">Sistem Pemesanan Kamar Hotel Online (Project PAW)</h3>
+              <p class="project-desc">
+                Platform reservasi kamar hotel online dengan katalog tipe kamar, validasi anti-double booking, kalkulasi biaya menginap, unggah bukti bayar, dan review pelanggan (Live Demo).
+              </p>
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> Logika Validasi Rentang Tanggal (Zero Double-Booking)</li>
+                <li><i class="fa-solid fa-check"></i> Kalkulasi Biaya Inap, Unggah Bukti Bayar & Review Tamu</li>
+                <li><i class="fa-solid fa-check"></i> Dashboard Admin Manajemen Kamar & Reservasi</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">PHP Native</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">Live Hosting</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-project="hotel">
+                  <i class="fa-solid fa-circle-info"></i> Detail Proyek & Peran
+                </button>
+                <a href="https://github.com/NURHABIBATULUMAH/Project-PAW-Sistem-Pemesanan-Kamar-Hotel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Kedaiku - Sistem Penjualan Biji Kopi Jombang (Project RPL) -->
+          <article class="project-card" data-category="web" id="cardKedaiku">
+            <div class="project-image-box">
+              <img src="assets/images/kedaiku.png" alt="Preview Kedaiku - Biji Kopi Jombang" onerror="handleImageError(this, 'kedaiku')">
+              <span class="project-type-badge" style="color: var(--accent-warning);">E-Commerce / Web App</span>
+              <span class="photo-hint-badge"><i class="fa-solid fa-image"></i> kedaiku.png</span>
+            </div>
+            <div class="project-content">
+              <div class="project-role-badge">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Peran: Backend, Database & Security Auth</span>
+              </div>
+              <h3 class="project-title">Kedaiku - Sistem Penjualan Biji Kopi Jombang (Project RPL)</h3>
+              <p class="project-desc">
+                Platform e-commerce pemesanan biji kopi khas Jombang dengan keamanan Verifikasi OTP Email, keranjang belanja, validasi stok checkout, dan cetak nota PDF resmi.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> Verifikasi OTP Email untuk Registrasi & Reset Password</li>
+                <li><i class="fa-solid fa-check"></i> Keranjang Belanja, Checkout & Validasi Stok Real-time</li>
+                <li><i class="fa-solid fa-check"></i> Manajemen Status Pesanan & Cetak Nota Struk PDF</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">PHP Native</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">OTP Verification</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">Cetak PDF</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-project="kedaiku">
+                  <i class="fa-solid fa-circle-info"></i> Detail Proyek & Peran
+                </button>
+                <a href="https://github.com/jaidan2212/Project_RPL" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Proyek Sains Data (PSD Repository) -->
+          <article class="project-card" data-category="data-ai" id="cardPSD">
+            <div class="project-image-box">
+              <img src="assets/images/psd.png" alt="Preview Proyek Sains Data" onerror="handleImageError(this, 'psd')">
+              <span class="project-type-badge" style="color: var(--accent-success);">Sains Data & ML</span>
+              <span class="photo-hint-badge"><i class="fa-solid fa-image"></i> psd.png</span>
+            </div>
+            <div class="project-content">
+              <div class="project-role-badge">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Peran: Data Scientist & ML Modeler</span>
+              </div>
+              <h3 class="project-title">Proyek Sains Data (Analisis Spasial, Citra, & Audio)</h3>
+              <p class="project-desc">
+                Dokumentasi Jupyter Book mencakup analisis spasial polutan lingkungan wilayah Tuban & Kerek, ekstraksi fitur time series TSFEL, clustering, serta klasifikasi citra satelit dan audio.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> Analisis Spasial Polutan Lingkungan & Fitur TSFEL</li>
+                <li><i class="fa-solid fa-check"></i> Clustering Polutan & Klasifikasi Citra Lahan Sawah</li>
+                <li><i class="fa-solid fa-check"></i> Ekstraksi Fitur Akustik (MFCC) & Klasifikasi Sinyal Audio</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Jupyter Book</span>
+                <span class="tech-tag">TSFEL</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">MFCC Audio</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-project="psd">
+                  <i class="fa-solid fa-circle-info"></i> Detail Proyek & Peran
+                </button>
+                <a href="https://github.com/NURHABIBATULUMAH/PSD" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Penambangan Data (Pendata Repository) -->
+          <article class="project-card" data-category="data-ai" id="cardPendata">
+            <div class="project-image-box">
+              <img src="assets/images/pendata.png" alt="Preview Penambangan Data" onerror="handleImageError(this, 'pendata')">
+              <span class="project-type-badge" style="color: var(--accent-secondary);">Data Mining</span>
+              <span class="photo-hint-badge"><i class="fa-solid fa-image"></i> pendata.png</span>
+            </div>
+            <div class="project-content">
+              <div class="project-role-badge">
+                <i class="fa-solid fa-user-check"></i>
+                <span>Peran: Data Mining Engineer & Modeler</span>
+              </div>
+              <h3 class="project-title">Penambangan Data (Data Mining & Learning Pipeline)</h3>
+              <p class="project-desc">
+                Buku kerja Jupyter Book eksplorasi metrik jarak data (Euclidean, Manhattan), normalisasi missing value, klasifikasi Decision Tree, Random Forest, Naive Bayes, dan regresi linier.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> Implementasi Matematis Metrik Jarak Data Riil</li>
+                <li><i class="fa-solid fa-check"></i> Preprocessing Missing Values & Normalisasi Min-Max/Z-Score</li>
+                <li><i class="fa-solid fa-check"></i> Klasifikasi Decision Tree, Random Forest, Naive Bayes</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Jupyter Book</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Decision Tree</span>
+                <span class="tech-tag">Naive Bayes</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-project="pendata">
+                  <i class="fa-solid fa-circle-info"></i> Detail Proyek & Peran
+                </button>
+                <a href="https://github.com/NURHABIBATULUMAH/Pendata" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Buka GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CERTIFICATIONS SECTION
+         =================================================================== -->
+    <section class="cert-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> Kredensial & Lisensi</span>
+          <h2 class="section-title">Sertifikasi Resmi <span class="gradient-text">BNSP & Dicoding</span></h2>
+          <p class="section-subtitle">Standar kompetensi kerja nasional dan sertifikasi industri yang memvalidasi kemampuan teknis pemrograman saya.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- BNSP Card -->
+          <div class="cert-card" id="certBnsp1">
+            <div class="cert-badge-top">
+              <span class="cert-issuer-pill bnsp">
+                <i class="fa-solid fa-shield-halved"></i> BNSP Republik Indonesia
+              </span>
+              <span class="cert-status-badge">
+                <i class="fa-solid fa-circle-check"></i> Kompeten Terverifikasi
+              </span>
+            </div>
+
+            <h3 class="cert-title">Sertifikasi Kompetensi Junior Web Programmer</h3>
+            <p class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+
+            <ul class="cert-details">
+              <li><i class="fa-solid fa-check"></i> <span>Menggunakan Struktur Data</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mengimplementasikan User Interface</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Melakukan Instalasi Software Tools Pemrograman</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Menulis Kode dengan Prinsip Sesuai Guideliness dan Best Practices</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mengimplementasikan Pemrograman Terstruktur</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Membuat Dokumen Kode Program</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Melakukan Debugging</span></li>
+            </ul>
+
+            <div class="cert-footer">
+              <span class="cert-id"><i class="fa-solid fa-barcode"></i> Standar SKKNI Kemnaker</span>
+            </div>
+          </div>
+
+          <!-- BNSP Card -->
+          <div class="cert-card" id="certBnsp2">
+            <div class="cert-badge-top">
+              <span class="cert-issuer-pill bnsp">
+                <i class="fa-solid fa-shield-halved"></i> BNSP Republik Indonesia
+              </span>
+              <span class="cert-status-badge">
+                <i class="fa-solid fa-circle-check"></i> Kompeten Terverifikasi
+              </span>
+            </div>
+
+            <h3 class="cert-title">Sertifikasi Kompetensi Pemasaran Sosial Media Marketing</h3>
+            <p class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+
+            <ul class="cert-details">
+              <li><i class="fa-solid fa-check"></i> <span>Merencanakan Riset Terhadap Sebuah Produk dan Merk</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Menggunakan Media Sosial dan Aplikasi Daring</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Melaksanakan Kegiatan Analisis di Media Sosial dan Media Bisnis Digital</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mempersiapkan Konten igital</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mengoptimalkan Pengelolaan Media Sosial dan Rencana Aplikasi Digital</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mengembangkan Pengetahuan Produk</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Melaksanakan Optimasi Periklanan Digital</span></li>
+            </ul>
+
+            <div class="cert-footer">
+              <span class="cert-id"><i class="fa-solid fa-barcode"></i> Standar SKKNI Kemnaker</span>
+            </div>
+          </div>
+
+          <!-- Dicoding Card -->
+          <div class="cert-card" id="certDicoding1">
+            <div class="cert-badge-top">
+              <span class="cert-issuer-pill dicoding">
+                <i class="fa-solid fa-certificate"></i> Dicoding Indonesia
+              </span>
+              <span class="cert-status-badge">
+                <i class="fa-solid fa-circle-check"></i> Lulus Ujian & Submission
+              </span>
+            </div>
+
+            <h3 class="cert-title">Sertifikat Kelulusan Belajar Dasar Pemrograman Web</h3>
+            <p class="cert-issuer">Dicoding Academy</p>
+
+            <ul class="cert-details">
+              <li><i class="fa-solid fa-check"></i> <span>Mempelajari alat yang digunakan dalam membangun struktur halaman website</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mendalami penerapan HTML dalam membangun struktur halaman web secara lebih lanjut</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mempelajari alat yang digunakan untuk memperindah tampilan halaman website</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mendalami penerapan CSS dalam mempercantik tampilan halaman website secara lebih lanjut</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mempelajari teknik layouting menggunakan Flexbox dalam membangun konten halaman website</span></li>
+            </ul>
+
+            <div class="cert-footer">
+              <span class="cert-id"><i class="fa-solid fa-check-double"></i> Verified Credential</span>
+            </div>
+          </div>
+
+           <!-- Dicoding Card -->
+          <div class="cert-card" id="certDicoding2">
+            <div class="cert-badge-top">
+              <span class="cert-issuer-pill dicoding">
+                <i class="fa-solid fa-certificate"></i> Dicoding Indonesia
+              </span>
+              <span class="cert-status-badge">
+                <i class="fa-solid fa-circle-check"></i> Lulus Ujian & Submission
+              </span>
+            </div>
+
+            <h3 class="cert-title">Sertifikat Kelulusan Memulai Dasar Pemrograman untuk Menjadi Pengembang
+Software</h3>
+            <p class="cert-issuer">Dicoding Academy</p>
+
+            <ul class="cert-details">
+              <li><i class="fa-solid fa-check"></i> <span>Memahami Kebutuhan Aplikasi : Belajar teori dan metodologi dalam memahami kebutuhan aplikasi dari sisi pengguna beserta dari sisi spesifikasi teknis
+aplikasi</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Perencanaan Modifikasi Aplikasi : Belajar teori dan metodologi dalam pembuatan persyaratan kebutuhan aplikasi</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Mengerti Konsep Dasar Pemrograman : Belajar teori sintaksis bahasa pemrograman, variabel, tipe data, logika komputer, dan bahasa pemrograman
+JavaScript</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Modifikasi Aplikasi Perangkat Lunak : Belajar bahasa markah HTML versi HTML5 dan bahasa pemrograman CSS versi 3.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Dokumentasi Pemrograman dan Pengembangan Aplikasi Perangkat Lunak : Belajar teori pengarsipan perangkat lunak, pembuatan gaya penulisan
+kode, penulisan komentar pada kode, dan pembuatan dokumentasi teknis aplikasi.</span></li>
+            </ul>
+
+            <div class="cert-footer">
+              <span class="cert-id"><i class="fa-solid fa-check-double"></i> Verified Credential</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         EDUCATION & TIMELINE
+         =================================================================== -->
+    <section class="timeline-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Jejak Akademik</span>
+          <h2 class="section-title">Pendidikan & <span class="gradient-text">Pengalaman Belajar</span></h2>
+          <p class="section-subtitle">Perjalanan akademis dan pencapaian selama menempuh perkuliahan di Universitas Trunojoyo Madura.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Asisten Praktikum -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2025 — Saat Ini</span>
+              <h3 class="timeline-title">Asisten Praktikum (Laboratorium Komputer)</h3>
+              <p class="timeline-org">Program Studi S1 Teknik Informatika, Universitas Trunodjoyo Madura</p>
+              <p class="timeline-desc">
+                Menjadi Asisten Praktikum yang memiliki tanggung jawab untuk mengajar praktikum, asistensi penyelesaian tugas pemrograman, review dan debugging kode, serta evaluasi ujian praktikum mahasiswa pada mata kuliah:
+              </p>
+              <ul class="timeline-sublist">
+                <li><i class="fa-solid fa-code"></i> <span><strong>Algoritma Pemrograman:</strong> Membimbing logika penyusunan algoritma, kontrol percabangan & perulangan, modularisasi fungsi, manipulasi array/struktur data, dan implementasi kode terstruktur.</span></li>
+                <li><i class="fa-solid fa-globe"></i> <span><strong>Dasar Pemrograman Web:</strong> Mengasistensi perancangan struktur website semantik (HTML5), teknik styling antarmuka modern responsif (CSS3 Flexbox/Grid), serta interaktivitas logika JavaScript DOM.</span></li>
+                <li><i class="fa-solid fa-network-wired"></i> <span><strong>Jaringan Komputer:</strong> Membimbing simulasi topologi jaringan komputer (Cisco Packet Tracer), pengalamatan IP & Subnetting (IPv4), serta analisis protokol komunikasi jaringan client-server.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UTM -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2024 — Sekarang</span>
+              <h3 class="timeline-title">S1 Teknik Informatika</h3>
+              <p class="timeline-org">Fakultas Teknik, Universitas Trunodjoyo Madura (UTM)</p>
+              <p class="timeline-desc">
+                Fokus studi pada Rekayasa Perangkat Lunak, Basis Data Relasional, Temu Kembali Informasi (Information Retrieval), Pemrograman Web, dan Sains Data. Aktif menyelesaikan tugas besar berbasis tim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CONTACT & RECRUITER CTA
+         =================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-box">
+          <div class="contact-grid">
+            <div class="contact-info-col">
+              <h2>Kontak <span class="gradient-text"></span></h2>
+
+              <div class="contact-methods">
+                <!-- WhatsApp Item -->
+                <div class="contact-item btn-open-wa" id="contactWaItem">
+                  <div class="contact-icon-box whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div class="contact-item-text">
+                    <h4>Hubungi via WhatsApp</h4>
+                  </div>
+                </div>
+
+                <!-- Email Item -->
+                <div class="contact-item" onclick="copyContact('email')" id="contactEmailItem">
+                  <div class="contact-icon-box">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="contact-item-text">
+                    <h4>Kirim Pesan Email</h4>
+                    <p>nurhabibatulumah@gmail.com (Klik untuk salin)</p>
+                  </div>
+                </div>
+
+                <!-- GitHub Item -->
+                <a href="https://github.com/NURHABIBATULUMAH" target="_blank" rel="noopener noreferrer" class="contact-item" id="contactGithubItem">
+                  <div class="contact-icon-box">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="contact-item-text">
+                    <h4>GitHub Repository</h4>
+                    <p>github.com/NURHABIBATULUMAH</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       MODAL DIALOG (PROJECT & CERTIFICATE DETAILS)
+       =================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup Dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalDynamicContent">
+        <!-- Content will be injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">
+        &copy; <strong>Nurhabibatul Umah</strong> • S1 Teknik Informatika, Universitas Trunodjoyo Madura.
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/NURHABIBATULUMAH" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="javascript:void(0)" onclick="copyContact('email')" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="javascript:void(0)" class="btn-open-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (dengan Cache-Buster agar perubahan nomor WA langsung terbaca) -->
+  <script src="assets/js/main.js?v=1.1"></script>
+</body>
+</html>
